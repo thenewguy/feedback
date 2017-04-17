@@ -11,7 +11,6 @@
   height: auto;
   min-height: 90px;
   outline: none;
-  font-family: Arial,sans-serif;
   padding: 4px;
 }
 #feedback-note-tmp:focus,
@@ -121,6 +120,7 @@
   width: 840px!important;
   height: auto;
 }
+#feedback-submit-loading,
 #feedback-submit-error,
 #feedback-submit-success {
   top: 30%;
@@ -143,7 +143,6 @@
 .feedback-btn-gray {
   text-align: center;
   cursor: pointer;
-  font-family: 'Open sans';
   border: 1px solid #dcdcdc;
   border: 1px solid rgba(0,0,0,0.1);
   color: #444;
@@ -168,7 +167,6 @@
 .feedback-btn-blue {
   text-align: center;
   cursor: pointer;
-  font-family: 'Open sans';
   border-radius: 2px;
   background-color: #357ae8;
   background-image: -webkit-linear-gradient(top,#4d90fe,#357ae8);
@@ -184,9 +182,9 @@
 #feedback-welcome,
 #feedback-highlighter,
 #feedback-overview,
+#feedback-submit-loading,
 #feedback-submit-success,
 #feedback-submit-error {
-  font-family: Arial,sans-serif;
   z-index: 40000;
   background: #fff;
   border: 1px solid rgba(0,0,0,.333);
@@ -305,7 +303,6 @@
   padding: 4px;
   height: 90px;
   outline: none;
-  font-family: Arial,sans-serif;
 }
 #feedback-overview-screenshot {  float: right }
 .feedback-screenshot {
