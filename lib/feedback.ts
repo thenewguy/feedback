@@ -14,6 +14,7 @@ import * as html2canvas from 'html2canvas';
       - blackout
       - edit (on screenshot)
     - helper when opening drawer first
+    - ripple effect for checkbox
   - use options (like backgroundOpacity, classPrefix)
 */
 
