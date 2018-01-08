@@ -1,5 +1,5 @@
 {
-  "name": "feedback.js",
+  "name": "@ivoviz/feedback.js",
   "version": "1.0.0-alpha.1",
   "description": "Feedback tool similar to Google's.",
   "main": "dist/index.js",
