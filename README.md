@@ -6,7 +6,7 @@ This is a very early alpha version, with a couple of [known issues](#known-issue
 ### Installing
 
 ```
-npm i @ivoviz/feedback-js
+npm i @ivoviz/feedback.js
 ```
 
 ### Usage
