@@ -53,3 +53,14 @@ You can read about `HTML2CanvasOptions` here: http://html2canvas.hertzen.com/con
 - Missing icons
 - Default texts should be written appropriately
 - Not many options at the moment
+
+### Build instructions
+
+    # Install (dev) dependencies
+    npm install
+    
+    # Build Javascript files from TypeScript
+    ./node_modules/.bin/tsc
+    
+    # Build css from sass
+    ./node_modules/.bin/node-sass lib/feedback.scss dist/lib/feedback.css
