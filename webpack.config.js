@@ -29,7 +29,7 @@ module.exports = [
       }
     },
     {
-      entry: ['./index.scss'],
+      entry: ['./style.js'],
       module: {
         rules: [
             {
@@ -46,14 +46,7 @@ module.exports = [
         ],
       },
       resolve: {
-        extensions: ['.scss', '.css'],
-      },
-      output: {
-        filename: 'feedback.css',
-        path: path.resolve(__dirname, 'dist'),
-      },
-      optimization: {
-        minimize: false
+        extensions: ['.js'],
       }
     }
 ];
