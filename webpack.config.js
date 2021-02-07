@@ -37,17 +37,7 @@ module.exports = [
                     // Translates CSS into CommonJS
                     'css-loader',
                     // Compiles Sass to CSS
-                    {
-                        loader: 'sass-loader',
-                        options: {
-                            sourceMap: true,
-                            sassOptions: {
-                                // https://github.com/sass/node-sass#outputstyle
-                                outputStyle: 'expanded',
-                                minimize: false,
-                            }
-                        }
-                    }
+                    'sass-loader'
                 ],
             },
         ],
