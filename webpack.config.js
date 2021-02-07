@@ -1,39 +1,54 @@
 const path = require('path');
 
-module.exports = {
-  entry: ['./index.ts', './index.scss'],
-  module: {
-    rules: [
+module.exports = [
     {
-        test: /\.tsx?$/,
-        use: 'ts-loader',
-        exclude: /node_modules/,
-    },
-    {
-        test: /\.css$/i,
-        use: ['style-loader', 'css-loader'],
-    },
-    {
-        test: /\.s[ac]ss$/i,
-        use: [
-            // Creates `style` nodes from JS strings
-            "style-loader",
-            // Translates CSS into CommonJS
-            "css-loader",
-            // Compiles Sass to CSS
-            "sass-loader",
+      entry: ['./index.ts'],
+      module: {
+        rules: [
+            {
+                test: /\.tsx?$/,
+                use: 'ts-loader',
+                exclude: /node_modules/
+            }
         ],
+      },
+      resolve: {
+        extensions: ['.tsx', '.ts', '.js'],
+      },
+      output: {
+        filename: '[name].js',
+        path: path.resolve(__dirname, 'dist'),
+      },
+      optimization: {
+        minimize: false
+      }
     },
-    ],
-  },
-  resolve: {
-    extensions: ['.tsx', '.ts', '.js'],
-  },
-  output: {
-    filename: '[name]',
-    path: path.resolve(__dirname, 'dist'),
-  },
-  optimization: {
-    minimize: false
-  }
-};
+    {
+      entry: ['./index.scss'],
+      module: {
+        rules: [
+            {
+                test: /\.s[ac]ss$/i,
+                use: [
+                    // Creates `style` nodes from JS strings
+                    "style-loader",
+                    // Translates CSS into CommonJS
+                    "css-loader",
+                    // Compiles Sass to CSS
+                    "sass-loader",
+                ],
+            },
+        ],
+      },
+      resolve: {
+        extensions: ['.scss', '.css'],
+      },
+      output: {
+        filename: '[name].css',
+        path: path.resolve(__dirname, 'dist'),
+      },
+      optimization: {
+        minimize: false
+      }
+    }
+];
