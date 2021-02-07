@@ -2,7 +2,9 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.plugins = [
-    new MiniCssExtractPlugin()
+    new MiniCssExtractPlugin({
+        filename: "[name].css"
+    })
 ]
 
 module.exports = [
@@ -47,6 +49,13 @@ module.exports = [
       },
       resolve: {
         extensions: ['.js'],
+      },
+      output: {
+        filename: 'feedback',
+        path: path.resolve(__dirname, 'dist'),
+      },
+      optimization: {
+        minimize: false
       }
     }
 ];
