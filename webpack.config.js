@@ -44,12 +44,14 @@ module.exports = [
       },
       plugins: [
         new MiniCssExtractPlugin({
-            filename: "feedback.css",
-            path: path.resolve(__dirname, 'dist'),
+            filename: "feedback.css"
         })
       ],
       resolve: {
         extensions: ['.css', '.scss'],
+      },
+      output: {
+        path: path.resolve(__dirname, 'dist'),
       },
       optimization: {
         minimize: false
