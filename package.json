@@ -3,7 +3,7 @@
   "version": "1.0.0-alpha.1",
   "description": "Feedback tool similar to Google's.",
   "main": "dist/index.js",
-  "browser": "dist/index.js",
+  "browser": "dist/feedback.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "webpack",

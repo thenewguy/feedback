@@ -16,7 +16,7 @@ module.exports = [
         extensions: ['.tsx', '.ts', '.js'],
       },
       output: {
-        filename: '[name].js',
+        filename: 'feedback.js',
         path: path.resolve(__dirname, 'dist'),
       },
       optimization: {
@@ -44,7 +44,7 @@ module.exports = [
         extensions: ['.scss', '.css'],
       },
       output: {
-        filename: '[name].css',
+        filename: 'feedback.css',
         path: path.resolve(__dirname, 'dist'),
       },
       optimization: {
