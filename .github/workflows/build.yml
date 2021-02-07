@@ -20,8 +20,6 @@ jobs:
       - name: Archive production artifacts
         uses: actions/upload-artifact@v2
         with:
-          name: dist-without-markdown
+          name: dist
           retention-days: 5
-          path: |
-            dist
-            !dist/**/*.md
+          path: dist
