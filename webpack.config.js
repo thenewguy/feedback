@@ -35,13 +35,21 @@ module.exports = [
                     // Creates `style` nodes from JS strings
                     MiniCssExtractPlugin.loader,
                     // Translates CSS into CommonJS
-                    "css-loader",
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            minimize: false,
+                        }
+                    },
                     // Compiles Sass to CSS
                     {
                         loader: 'sass-loader',
                         options: {
+                            sourceMap: true,
                             sassOptions: {
-                                outputStyle: 'expanded'
+                                // https://github.com/sass/node-sass#outputstyle
+                                outputStyle: 'expanded',
+                                minimize: false,
                             }
                         }
                     }
